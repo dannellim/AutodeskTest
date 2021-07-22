@@ -2,7 +2,12 @@ plugins {
 	id 'org.springframework.boot' version '2.3.2.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
+	id 'application'
+	id 'eclipse'
+	id 'idea'
 }
+
+mainClassName = 'com.beta.replyservice.RestServiceApplication'
 
 group = 'com.beta'
 version = '0.0.1-SNAPSHOT'
@@ -10,6 +15,7 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
@@ -17,6 +23,7 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	testImplementation 'junit:junit:4.12'
 }
 
 test {
