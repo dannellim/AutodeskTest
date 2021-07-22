@@ -1,3 +1,18 @@
+# Personal Comments
+
+### Environment
+- Windows 11
+- Java 16
+- Eclipse IDE 2021-06
+- Gradle 7
+
+### Implementations
+- Did test driven development by writing test cases first based on the examples provided.
+- Added Rules and ErrorMsg classes to hold and organise string constants for easy maintenance and change in the future. (Perhaps translations like Android strings)
+- Organised utility functions by generic and crytographic methods.
+
+## TEST
+
 # Your Task
 Our company has released a beta version of **String Reply Service** and it has been a huge success.
 In the current implementation, the **String Reply Service** takes in an input string (in the format of `[a-z0-9]*`)
